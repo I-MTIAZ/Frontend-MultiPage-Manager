@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* home-page */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* each page and button container  */
+.page-and-button {
+  display: flex;
+  width: 370px;
+  height: 42px;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1F2128;
+}
+
+/* separator-line */
+
+.break {
+  height: 0.7px;
+  width: 370px;
+  background: #CDCDCD;
+  margin-bottom: 10px;
+}
+
+/* Custom checkbox styles */
+.custom-checkbox {
+  width: 23px;
+  height: 23px;
+  background-color: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  color: #080808;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
+}
+
+/* Step-by-step color transitions */
+.custom-checkbox.step-1 {
+  background-color: #ffffff;
+  border-color: #E3E3E3;
+  color: #080808;
+}
+
+.custom-checkbox.step-2 {
+  background-color: #FFFFFF;
+  border-color: #CCD2E0;
+  color: #878787;
+}
+
+.custom-checkbox.step-3 {
+  background-color: #5087F8;
+  color: #FFFFFF;
+}
+
+/* Fully checked state */
+.custom-checkbox.checked {
+  background-color: #2469F6;
+}
+
+.custom-checkbox.checked:hover {
+  background-color: #5087F8;
+}
+
+/* Hide both images initially */
+.custom-checkbox img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Show black image on hover */
+.custom-checkbox:hover .black-icon {
+  opacity: 1;
+}
+
+/* Show white image when checked */
+.custom-checkbox.checked .white-icon {
+  opacity: 1;
+}
+
+/* icon style */
+#checkbox img {
+  background: transparent;
+  height: 11px;
+  width: 15px;
+}
+
+/* button-styles */
+.btn {
+  border: 0;
+  background-color: #ffce22;
+  width: 370px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1F2128;
+}
+
+.btn:hover {
+  background-color: #FFD84D;
+}
